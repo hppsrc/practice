@@ -75,7 +75,7 @@ export default function App() {
                             key={btnIndex}
                             text={text}
                             color={getButtonColor(text, row)}
-                            onClick={() => alert("text, row")}
+                            onClick={() => handleButtonClick(text, row)}
                         />
                     ))}
                 </div>
