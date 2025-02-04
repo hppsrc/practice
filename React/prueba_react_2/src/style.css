@@ -1,0 +1,20 @@
+* {
+	text-align: center;
+}
+
+html {
+	body {
+		#root {
+			header {
+				form {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+				}
+			}
+			main {
+
+			}
+		}
+	}
+}
