@@ -1,4 +1,11 @@
+import responseMovie from "./example/return.json";
+import noResponseMovie from "./example/error.json";
+
+import { Movie } from "./components/movies.jsx";
+
 export default function App() {
+	const movies = responseMovie.Search;
+
 	return (
 		<>
 			<header>
@@ -10,8 +17,9 @@ export default function App() {
 			</header>
 
 			<main>
-				<small>Resultados...</small>
+				<Movie movies={movies} />
 			</main>
 		</>
 	);
+
 }
