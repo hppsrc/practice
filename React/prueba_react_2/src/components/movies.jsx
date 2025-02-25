@@ -1,9 +1,9 @@
 export function RenderMovies({ movies }) {
 	return (
-		<ul>
+		<ul className='movies' >
 			{movies.map(movie => (
-				<li key={movie.id}>
-					{/* <img src={movie.poster} alt="" srcset="" /> */}
+				<li className='movie' key={movie.id}>
+					<img src={movie.poster} />
 					<h3>{movie.title}</h3>
 					<h6>{movie.year}</h6>
 				</li>
